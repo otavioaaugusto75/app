@@ -86,7 +86,7 @@ export function AnimatedSplash({ onFinish }: { onFinish: () => void }) {
           ))}
         </View>
         <Animated.View style={[styles.wordWrap, wordStyle]}>
-          <Text testID="splash-wordmark" style={[styles.word, { color: colors.onSurface }]}>inclusiv.ai</Text>
+          <Text testID="splash-wordmark" style={[styles.word, { color: colors.onSurface }]}>adapt.ica</Text>
           <Text style={[styles.tagline, { color: colors.muted }]}>Provas adaptadas para cada aluno</Text>
         </Animated.View>
       </View>

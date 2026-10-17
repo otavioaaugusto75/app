@@ -40,7 +40,7 @@ export default function Login() {
             <View style={styles.logoBox}>
               <MaterialDesignIcons name="shape-plus" size={22} color="#FFFFFF" />
             </View>
-            <Text style={styles.brand}>inclusiv.ai</Text>
+            <Text style={styles.brand}>adapt.ica</Text>
           </View>
 
           <Text style={styles.title}>Entrar</Text>

@@ -1,4 +1,4 @@
-# inclusiv.ai — PRD
+# adapt.ica — PRD (antes inclusiv.ai)
 
 ## Original problem statement
 App mobile (iOS/Android) que lê o PDF (ou foto, "modo Lens") de uma prova e gera uma versão adaptada ao perfil de cada aluno PCD, mantendo o objetivo de aprendizagem, com guia de como APLICAR a prova por perfil. Especificação completa no pacote enviado (PROMPT_PRINCIPAL, PRD, TELAS, DESIGN_SYSTEM, ADAPTACOES, ARQUITETURA, PROMPTS_IA).
@@ -20,7 +20,7 @@ Gemini 3 Pro (gemini-3.1-pro-preview) via Emergent key · Auth JWT e-mail/senha 
 - Exportar PDF, TXT, áudio; aprovação do professor (human-in-the-loop)
 - Cadastro de alunos com perfis e PEI; seed demo
 - Tested: 19/19 backend, all frontend flows pass
-- Animated startup screen (src/components/animated-splash.tsx): 4 logo shapes fly in from screen corners into the logo, wordmark fades in, respects reduce-motion; app name changed to "inclusiv.ai", native splash bg #EEF0FF
+- Animated startup screen (src/components/animated-splash.tsx): 4 logo shapes fly in from screen corners into the logo, wordmark fades in, respects reduce-motion; app name changed to "adapt.ica", native splash bg #EEF0FF
 
 ## Backlog
 - P1: Regenerate single question; edit exam analysis (structure editor UI); history/performance reports by subject (Relatórios); DOCX export

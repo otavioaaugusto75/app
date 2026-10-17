@@ -1,4 +1,4 @@
-// inclusiv.ai design tokens.
+// adapt.ica design tokens.
 // Paleta inspirada na identidade AWS em versão suave/pastel (ver design/DESIGN_SYSTEM.md).
 import { useMemo } from "react";
 import { Appearance, StyleSheet, useColorScheme } from "react-native";

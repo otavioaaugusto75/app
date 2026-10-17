@@ -1,4 +1,4 @@
-"""inclusiv.ai backend — Expo mobile app for adapting school exams for students with disabilities."""
+"""adapt.ica backend — Expo mobile app for adapting school exams for students with disabilities."""
 from __future__ import annotations
 
 import base64
@@ -44,7 +44,7 @@ EMERGENT_LLM_KEY = os.environ.get("EMERGENT_LLM_KEY", "")
 client = AsyncIOMotorClient(MONGO_URL)
 db = client[DB_NAME]
 
-app = FastAPI(title="inclusiv.ai")
+app = FastAPI(title="adapt.ica")
 api_router = APIRouter(prefix="/api")
 security = HTTPBearer(auto_error=False)
 
@@ -326,7 +326,7 @@ Responda APENAS com JSON válido:
 # ---------------------------------------------------------------------------
 @api_router.get("/")
 async def root():
-    return {"app": "inclusiv.ai", "status": "ok"}
+    return {"app": "adapt.ica", "status": "ok"}
 
 
 @api_router.post("/auth/register", response_model=AuthOut)
@@ -845,7 +845,7 @@ async def seed_demo():
         "id": user_id,
         "name": "Prof. Demonstração",
         "email": DEMO_EMAIL,
-        "institution": "Escola Demo inclusiv.ai",
+        "institution": "Escola Demo adapt.ica",
         "role": "professor",
         "password_hash": _hash_password(DEMO_PASSWORD),
         "created_at": datetime.now(timezone.utc).isoformat(),
