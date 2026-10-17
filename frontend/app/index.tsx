@@ -1,34 +1,26 @@
-import { useEffect } from "react";
-import { ActivityIndicator, View } from "react-native";
-import { Redirect, useRouter } from "expo-router";
+import { useCallback, useEffect, useState } from "react";
+import { useRouter } from "expo-router";
 import { storage } from "@/src/utils/storage";
 import { useAuth } from "@/src/auth-context";
-import { useTheme } from "@/src/theme";
+import { AnimatedSplash } from "@/src/components/animated-splash";
 
 const ONBOARDING_KEY = "inclusiv_onboarded";
 
 export default function Index() {
   const { user, loading } = useAuth();
-  const { colors } = useTheme();
   const router = useRouter();
+  const [animDone, setAnimDone] = useState(false);
+  const finish = useCallback(() => setAnimDone(true), []);
 
   useEffect(() => {
+    if (loading || !animDone) return;
     (async () => {
-      if (loading) return;
       const onboarded = await storage.getItem<boolean>(ONBOARDING_KEY, false);
-      if (!onboarded) {
-        router.replace("/onboarding");
-      } else if (!user) {
-        router.replace("/(auth)/login");
-      } else {
-        router.replace("/(tabs)");
-      }
+      if (!onboarded) router.replace("/onboarding");
+      else if (!user) router.replace("/(auth)/login");
+      else router.replace("/(tabs)");
     })();
-  }, [loading, user, router]);
+  }, [loading, animDone, user, router]);
 
-  return (
-    <View style={{ flex: 1, backgroundColor: colors.surface, alignItems: "center", justifyContent: "center" }}>
-      <ActivityIndicator color={colors.brandPrimary} />
-    </View>
-  );
+  return <AnimatedSplash onFinish={finish} />;
 }

@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "frontend",
+    "name": "inclusiv.ai",
     "slug": "frontend",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -18,10 +18,12 @@
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#000000"
+        "backgroundColor": "#EEF0FF"
       },
       "package": "com.emergent.appmobilelab.jpe4t6",
-      "permissions": ["android.permission.CAMERA"]
+      "permissions": [
+        "android.permission.CAMERA"
+      ]
     },
     "web": {
       "bundler": "metro",
@@ -36,7 +38,7 @@
           "image": "./assets/images/splash-image.png",
           "imageWidth": 200,
           "resizeMode": "contain",
-          "backgroundColor": "#000000"
+          "backgroundColor": "#EEF0FF"
         }
       ],
       "expo-font",

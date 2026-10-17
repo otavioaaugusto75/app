@@ -20,6 +20,7 @@ Gemini 3 Pro (gemini-3.1-pro-preview) via Emergent key · Auth JWT e-mail/senha 
 - Exportar PDF, TXT, áudio; aprovação do professor (human-in-the-loop)
 - Cadastro de alunos com perfis e PEI; seed demo
 - Tested: 19/19 backend, all frontend flows pass
+- Animated startup screen (src/components/animated-splash.tsx): 4 logo shapes fly in from screen corners into the logo, wordmark fades in, respects reduce-motion; app name changed to "inclusiv.ai", native splash bg #EEF0FF
 
 ## Backlog
 - P1: Regenerate single question; edit exam analysis (structure editor UI); history/performance reports by subject (Relatórios); DOCX export
