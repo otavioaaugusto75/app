@@ -6,7 +6,7 @@ O adapt.ica (nome anterior: inclusiv.ai) é um aplicativo móvel para iOS e Andr
 
 Projeto desenvolvido para a disciplina de **Dispositivos Móveis (Android)**.
 
-> Relatório técnico completo: [`docs/Relatorio-adapt-ica.pdf`](docs/Relatorio-adapt-ica.pdf)
+> Relatório técnico completo: Relatorio-adapt-ica (1).pdf
 
 ## Funcionalidades
 
