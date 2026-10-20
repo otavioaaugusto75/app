@@ -96,6 +96,8 @@ Os testes ficam na pasta `tests/`, e os relatórios em `test_reports/`. Na últi
 - Pictogramas (ARASAAC), modo escuro e fonte para dislexia
 - Exportação e exclusão de dados conforme a LGPD
 
-## Autor
-
-[SEU NOME] · [SEU CURSO] · [SUA INSTITUIÇÃO]
+## Autores
+Otávio Augusto
+  └─ José Álvaro
+       └─ Análise e Desenvolvimento de Sistemas
+            └─ UNIFBV WYDEN
